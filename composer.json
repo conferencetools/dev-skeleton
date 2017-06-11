@@ -1,0 +1,20 @@
+{
+  "name": "conferencetools/dev-skeleton",
+  "description": "Skeleton app for working with one or more of the conference tools modules",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/conferencetools/sponsorship-module"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.5",
+    "conferencetools/sponsorship": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "platform": {
+    "php": "7.0.0"
+  }
+}
