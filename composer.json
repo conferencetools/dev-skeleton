@@ -6,11 +6,21 @@
     {
       "type": "vcs",
       "url": "https://github.com/conferencetools/sponsorship-module"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/conferencetools/opentickets"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/carnage/scheduler"
     }
   ],
   "require": {
     "php": ">=7.0.5",
-    "conferencetools/sponsorship": "dev-master"
+    "conferencetools/sponsorship": "dev-master",
+    "opentickets/opentickets": "dev-make-module",
+    "bushbaby/flysystem": "^3.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

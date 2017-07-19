@@ -3,11 +3,13 @@
 $modules = [
     'TwbBundle',
     'AssetManager',
+    'BsbFlysystem',
     'DoctrineModule',
     'DoctrineORMModule',
     'Carnage\ZendfonyCli',
     'Carnage\Cqrs',
     'Carnage\Cqorms',
+    'Carnage\Scheduler'
 ];
 
 if (class_exists('ConferenceTools\Sponsorship\Module')) {
@@ -16,6 +18,8 @@ if (class_exists('ConferenceTools\Sponsorship\Module')) {
 
 if (class_exists('ConferenceTools\Tickets\Module')) {
     $modules[] = 'ConferenceTools\Tickets';
+    $modules[] = 'OpenTickets\GoogleAnalytics';
+    $modules[] = 'ZfrStripeModule';
 }
 
 return [

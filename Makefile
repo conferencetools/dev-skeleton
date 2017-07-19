@@ -20,6 +20,6 @@ clean:
 
 port:
 	echo -n "App running at http://localhost:"
-	docker port sponsorship_webapp_1 | cut -f2 -d:
+	docker port devskeleton_webapp_1 | cut -f2 -d:
 
 
