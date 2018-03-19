@@ -9,16 +9,26 @@ $modules = [
     'Carnage\ZendfonyCli',
     'Carnage\Cqrs',
     'Carnage\Cqorms',
-    'Carnage\Scheduler'
+    'Carnage\Scheduler',
+    'Carnage\ZendLayoutPerModule'
 ];
 
 if (class_exists('ConferenceTools\Sponsorship\Module')) {
-    $modules[] = 'ConferenceTools\Sponsorship';
+    //$modules[] = 'ConferenceTools\Sponsorship';
+}
+
+if (class_exists('ConferenceTools\Checkin\Module')) {
+    $modules[] = 'ConferenceTools\Checkin';
+}
+
+if (class_exists('ConferenceTools\TicketsAdmin\Module')) {
+
+    $modules[] = 'ConferenceTools\TicketsAdmin';
 }
 
 if (class_exists('ConferenceTools\Tickets\Module')) {
+    $modules[] = 'ConferenceTools\GoogleAnalytics';
     $modules[] = 'ConferenceTools\Tickets';
-    $modules[] = 'OpenTickets\GoogleAnalytics';
     $modules[] = 'ZfrStripeModule';
 }
 
